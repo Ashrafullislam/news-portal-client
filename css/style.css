@@ -1,1 +1,40 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    font-family: 'Anek Telugu', sans-serif;
+    background-color: #dfe6e9;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+#news{
+    border-bottom: 2px solid blue;
+}
+/* header section */
+.button-menu{
+    text-decoration: none;
+    color: rgb(21, 25, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+span{
+    color: rgb(255, 0, 136);
+}
+.blog-div {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.blog-div a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(77, 39, 250);
+    padding: 0px 8px;
+    font-weight: 600;
+
+ } 
