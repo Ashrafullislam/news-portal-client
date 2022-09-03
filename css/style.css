@@ -30,6 +30,7 @@ span{
     align-items: center;
     justify-content: right;
 }
+/* header section blog div  */
 .blog-div a{
     text-decoration: none;
     font-size: 17px;
@@ -40,7 +41,6 @@ span{
  } 
 
 
- 
 /* items section */
 .items-section{
     background-color: #fff;

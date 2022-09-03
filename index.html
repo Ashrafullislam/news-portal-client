@@ -1,274 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
   <!-- font awesome icon -->
-    <script src="https://kit.fontawesome.com/b4226e5cb7.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b4226e5cb7.js" crossorigin="anonymous"></script>
 
-    <title>web-day36-assignment6</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- customize css link  -->
-    <link rel="stylesheet" href="css/style.css">
+  <title>web-day36-assignment6</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous">
+  <!-- customize css link  -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-      <section>
-          <div class="container d-flex py-4 justify-content-between align-items-center">
-              <div class="button-div">
-               
-                <a class="button-menu" href="#">On <span>line</span> N<span>ews </span> </a>
-              </div>
-              <div class="blog-div">
-                  <a id="news" href=""> News</a>
+  <header>
+    <section>
+      <div class="container d-flex py-4 justify-content-between align-items-center">
+        <div class="button-div">
 
-                  <!-- <a href="blog.html" id="blog" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>  >blog</a>
+          <a class="button-menu" href="#">On <span>line</span> N<span>ews </span> </a>
+        </div>
+        <div class="blog-div">
+          <a id="news" href=""> News</a>
+
+          <!-- <a href="blog.html" id="blog" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>  >blog</a>
                    -->
-                   <button type="button" class="btn btn-primary mx-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    blog
-                  </button> 
-                  
-                  <img class="men-info-img w-25 h-auto" src="img.png" alt="">
-              </div>
-          </div>
-      </section>
-    </header>
-
-
-    <!-- blog : modal faq  -->
-    <section id="blog-modal">
-     
-     <!-- Button trigger modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
- aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- accordian for question ans  -->
-
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                What is the different of Const, let,var ?
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-             {  var keyword in JavaScript: The var is the oldest keyword to declare a variable in JavaScript. 
-
-              Scope: Global scoped or function scoped. The scope of the var keyword is the global or function scope. It means variables defined outside the function can be accessed globally, and variables defined inside a particular function can be accessed within the function. } <br>
-
-              {
-                let keyword in JavaScript: The let keyword is an improved version of the var keyword. 
-
-              Scope: block scoped: The scope of a let variable is only block scoped. It can’t be accessible outside the particular block ({block}). 
-               } <br>
-
-               {
-                const keyword in JavaScript: The const keyword has all the properties that are the same as the let keyword, except the user cannot update it.
-
-              Scope: block scoped: When users declare a const variable, they need to initialize it, otherwise, it returns an error. The user cannot update the const variable once it is declared. 
-
-               }
-
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Arrow funtion Vs Regular Function
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Understanding the differences between regular and arrow functions helps choose the right syntax for specific needs.
-
-                this value inside a regular function is dynamic and depends on the invocation. But this inside the arrow function is bound lexically and equals to this of the outer function.
-
-                arguments object inside the regular functions contains the list of arguments. The arrow function, on the opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest parameter ...args).
-
-                If the arrow function has one expression, then the expression is returned implicitly, even without using the return keyword.
-
-                Last but not least, you can define methods using the arrow function syntax inside classes. Fat arrow methods bind this value to the class instance.
-
-                Anyhow the fat arrow method is invoked, this always equals the class instance, which is useful when the methods are used as callbacks.
-            </div>
-        </div>
-    </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            what is different of, map ,forEach,filter,find ?
+          <button type="button" class="btn btn-primary mx-2 px-4" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            blog
           </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-               {
-                map():> map calls a provided callbackFn function once for each element in an array, in order, and constructs a new array from the results. callbackFn is invoked only for indexes of the array which have assigned values (including undefined).
-               } <br>
 
-               {
-                foreach function: The forEach method is also used to loop through arrays, but it uses a function differently than the classic "for loop".
-
-                The forEach method passes a callback function for each element of an array together with the following parameters:
-                
-                Current Value (required) - The value of the current array element
-                Index (optional) - The current element's index number
-                Array (optional) - The array object to which the current element belong
-               } <br>
-
-               {
-                filter:>The filter() method creates a new array filled with elements that pass a test provided by a function. The filter() method does not execute the function for ...
-               }<br>
-               {
-                find:>JavaScript Array find()
-                The find() method returns the value of the first element that passes a test. The find() method executes a function for each array element. The find() method returns undefined if no elements are found. The find() method does not execute the function for empty elements.
-                Function(): Required. A function to run for each ...
-                Arr: Optional. The array of the current element
-                ThisValue: Optional. Default. A value passed to ...
-                Index: Optional. The index of the current eleme...
-               }
-
+          <img class="men-info-img w-25 h-auto" src="img.png" alt="">
         </div>
-    </div>
-  </div>
-
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"   data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-        Why use Template Screen                
-         </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Screen Templates enable you to create Screens with predefined layouts, widgets, components, styles, and logic. The Screens you create from the built-in Screen Templates have sample data. Having sample data in the Screen is a good way to see how the Screen is designed and to get inspired for developing your app.
-
-                Screen Templates help you develop faster. For example, create a work order template and make it onto a Screen that shows the statuses of your project tasks. You can change the Screens by dropping an Entity over the widget. When the Entity changes, Service Studio updates the user interface.
-          </div>
       </div>
-    </div>
-
-        </div>
-  
-       <!-- end accordian  -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
     </section>
-    <!-- end model  -->
-    <main>
-      
-      <section class="menu-section ">
-             <!-- navber part  -->
-           
-           <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid nav-menu">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                  <ul id="menu-item" class="navbar-nav me-auto mb-2 mb-lg-0">
-  
-                  </ul>
+  </header>
+
+
+  <!-- blog : modal faq  -->
+  <section id="blog-modal">
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- accordian for question ans  -->
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    What is the different of Const, let,var ?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    { var keyword in JavaScript: The var is the oldest keyword to declare a variable in
+                    JavaScript.
+
+                    Scope: Global scoped or function scoped. The scope of the var keyword is the global or
+                    function scope. It means variables defined outside the function can be accessed globally,
+                    and variables defined inside a particular function can be accessed within the function. }
+                    <br>
+
+                    {
+                    let keyword in JavaScript: The let keyword is an improved version of the var keyword.
+
+                    Scope: block scoped: The scope of a let variable is only block scoped. It can’t be
+                    accessible outside the particular block ({block}).
+                    } <br>
+
+                    {
+                    const keyword in JavaScript: The const keyword has all the properties that are the same as
+                    the let keyword, except the user cannot update it.
+
+                    Scope: block scoped: When users declare a const variable, they need to initialize it,
+                    otherwise, it returns an error. The user cannot update the const variable once it is
+                    declared.
+
+                    }
+
+                  </div>
                 </div>
-
-            </div>
-          </nav> 
-      </section>
-
-      <section>
-        <div class="container">
-            <div class="items-section">
-                <h4 id="newsItems"></h4>
-            </div>
-        </div>
-      </section>
-
-      <section id="trending-section">
-          <div  id="short-section" class="container d-flex justify-content-between  py-4">
-            <div class="short-by d-flex  w-50 align-items-center">
-              <p class="me-3 fs-5 mb-0">Sort By View:</p>
-              <select class="form-select w-25 bg-white" aria-label="Disabled select example" disabled >
-                <option selected>Default</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option> 
-               </select>
-               </div>
-               <div class="trending-btn">
-              <button class="btn btn-primary me-2 mb-0">Today's pick</button>
-              <button class="btn text-primary border-primary">Trending</button>
-            </div>
-          </div>
-      </section>
-
-      <section id="loading" class="d-none">
-        <div class="container">
-          <div class="text-center">
-            <div class="spinner-border" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-
- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div id="my-modal" class="modal-dialog modal-dialog-scrollable"></div>
- </div> 
-      </section>
-
-      <section>
-          <div class="container">
-            <div id="section-card" class="card mb-3 mt-4 mb-3" style="max-width: 100%;">
-              <div class="row g-0">
-
               </div>
-            </div>
-          </div>
-      </section>
-    </main>
 
-    <!-- footer section start here  -->
-<footer class="mt-5 bg-light py-4">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                    aria-controls="flush-collapseTwo">
+                    Arrow funtion Vs Regular Function
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Understanding the differences between regular and arrow functions helps choose the right
+                    syntax for specific needs.
+
+                    this value inside a regular function is dynamic and depends on the invocation. But this
+                    inside the arrow function is bound lexically and equals to this of the outer function.
+
+                    arguments object inside the regular functions contains the list of arguments. The arrow
+                    function, on the opposite, doesn't define arguments (but you can easily access the arrow
+                    function arguments using a rest parameter ...args).
+
+                    If the arrow function has one expression, then the expression is returned implicitly, even
+                    without using the return keyword.
+
+                    Last but not least, you can define methods using the arrow function syntax inside classes.
+                    Fat arrow methods bind this value to the class instance.
+
+                    Anyhow the fat arrow method is invoked, this always equals the class instance, which is
+                    useful when the methods are used as callbacks.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                    aria-controls="flush-collapseThree">
+                    what is different of, map ,forEach,filter,find ?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    {
+                    map():> map calls a provided callbackFn function once for each element in an array, in
+                    order, and constructs a new array from the results. callbackFn is invoked only for indexes
+                    of the array which have assigned values (including undefined).
+                    } <br>
+
+                    {
+                    foreach function: The forEach method is also used to loop through arrays, but it uses a
+                    function differently than the classic "for loop".
+
+                    The forEach method passes a callback function for each element of an array together with
+                    the following parameters:
+
+                    Current Value (required) - The value of the current array element
+                    Index (optional) - The current element's index number
+                    Array (optional) - The array object to which the current element belong
+                    } <br>
+
+                    {
+                    filter:>The filter() method creates a new array filled with elements that pass a test
+                    provided by a function. The filter() method does not execute the function for ...
+                    }<br>
+                    {
+                    find:>JavaScript Array find()
+                    The find() method returns the value of the first element that passes a test. The find()
+                    method executes a function for each array element. The find() method returns undefined if
+                    no elements are found. The find() method does not execute the function for empty elements.
+                    Function(): Required. A function to run for each ...
+                    Arr: Optional. The array of the current element
+                    ThisValue: Optional. Default. A value passed to ...
+                    Index: Optional. The index of the current eleme...
+                    }
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                    aria-controls="flush-collapseFour">
+                    Why use Template Screen
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Screen Templates enable you to create Screens with predefined layouts, widgets,
+                    components, styles, and logic. The Screens you create from the built-in Screen Templates
+                    have sample data. Having sample data in the Screen is a good way to see how the Screen is
+                    designed and to get inspired for developing your app.
+
+                    Screen Templates help you develop faster. For example, create a work order template and
+                    make it onto a Screen that shows the statuses of your project tasks. You can change the
+                    Screens by dropping an Entity over the widget. When the Entity changes, Service Studio
+                    updates the user interface.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- end accordian  -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- end model  -->
+  <main>
+
+    <section class="menu-section ">
+      <!-- navber part  start here -->
+
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid nav-menu">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul id="menu-item" class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="items-section">
+          <h4 id="newsItems"></h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- trending section start here  -->
+    <section id="trending-section">
+      <div id="short-section" class="container d-flex justify-content-between  py-4">
+        <div class="short-by d-flex  w-50 align-items-center">
+          <p class="me-3 fs-5 mb-0">Sort By View:</p>
+          <select class="form-select w-25 bg-white" aria-label="Disabled select example" disabled>
+            <option selected>Default</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="trending-btn">
+          <button class="btn btn-primary me-2 mb-0">Today's pick</button>
+          <button class="btn text-primary border-primary">Trending</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- loder snipper start here  -->
+    <section id="loading" class="d-none">
+      <div class="container">
+        <div class="text-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div id="my-modal" class="modal-dialog modal-dialog-scrollable"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="section-card" class="card mb-3 mt-4 mb-3" style="max-width: 100%;">
+          <div class="row g-0">
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer section start here  -->
+  <footer class="mt-5 bg-light py-4">
     <section class="container-fluid d-flex flex-column align-items-center justify-content-center py-5 ">
-     <h6>&copy;Copyright:ONLINE NEWS</h6>
-     <h6>All Rights Reserved Ashrafull</h6>
+      <h6>&copy;Copyright:ONLINE NEWS</h6>
+      <h6>All Rights Reserved Ashrafull</h6>
 
     </section>
-</footer>
+  </footer>
 
 
   <!-- script file  -->
 
   <!-- bootstrap js file link  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <!-- custom app.js file link  -->
-    <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- custom app.js file link  -->
+  <script src="js/app.js"></script>
 </body>
 </html>

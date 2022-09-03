@@ -1,3 +1,6 @@
+// js file 
+
+// find the api link and get load the news category 
 const loadNews = () => {
     fetch('https://openapi.programming-hero.com/api/news/categories')
     .then(res => res.json())
@@ -99,7 +102,7 @@ const newsDetails = id => {
 }
 
 const showSingleNews = news => {
-    console.log(news[0]);
+    // console.log(news[0]);
     const mainDiv = document.getElementById('my-modal');
     mainDiv.innerHTML = '';
     const div = document.createElement('div');
@@ -111,15 +114,18 @@ const showSingleNews = news => {
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        
         <div class="modal-body">
             <img class="img-thumbnail" src="${news[0].image_url}">
             <div class="d-flex justify-content-between my-2 align-items-center">
                 <div class="men-info d-flex align-items-center">
                     <img class="men-info-img" src="${news[0].author.img}" alt="">
+
                 <div class="men-title ms-2">
                         <p class="mb-0">Author</p>
                         <p class="mb-0">${news[0].author.name}</p>
                 </div> 
+
                 </div>
                 <div class="view-item d-flex align-items-center">
                         <i class="fa-regular fa-eye fs-3 me-2"></i>
