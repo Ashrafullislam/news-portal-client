@@ -85,7 +85,7 @@
 
                }
 
-                      </div>
+              </div>
             </div>
           </div>
 
@@ -96,9 +96,21 @@
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              <div class="accordion-body">
+                Understanding the differences between regular and arrow functions helps choose the right syntax for specific needs.
+
+                this value inside a regular function is dynamic and depends on the invocation. But this inside the arrow function is bound lexically and equals to this of the outer function.
+
+                arguments object inside the regular functions contains the list of arguments. The arrow function, on the opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest parameter ...args).
+
+                If the arrow function has one expression, then the expression is returned implicitly, even without using the return keyword.
+
+                Last but not least, you can define methods using the arrow function syntax inside classes. Fat arrow methods bind this value to the class instance.
+
+                Anyhow the fat arrow method is invoked, this always equals the class instance, which is useful when the methods are used as callbacks.
             </div>
-          </div>
+        </div>
+    </div>
 
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
