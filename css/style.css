@@ -126,3 +126,23 @@ span{
      }
  }
 
+ @media screen and (max-width:768px){
+    .nav-menu{
+        width: 100vw;
+        background-color:rgb(221, 227, 229);
+    }
+  
+        #short-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        select.form-select.w-25.bg-white {
+            padding: 5px;
+            width: 150px!important;
+            margin-bottom: 10px;
+            margin-left: 16px;
+        }
+    
+ }
