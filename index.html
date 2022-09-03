@@ -112,16 +112,31 @@
         </div>
     </div>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-               what is different of, map ,forEach,filter,find ?
-              </button>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            what is different of, map ,forEach,filter,find ?
+          </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
-          </div>
+              <div class="accordion-body">
+               {
+                map():> map calls a provided callbackFn function once for each element in an array, in order, and constructs a new array from the results. callbackFn is invoked only for indexes of the array which have assigned values (including undefined).
+               } <br>
+
+               {
+                foreach function: The forEach method is also used to loop through arrays, but it uses a function differently than the classic "for loop".
+
+                The forEach method passes a callback function for each element of an array together with the following parameters:
+                
+                Current Value (required) - The value of the current array element
+                Index (optional) - The current element's index number
+                Array (optional) - The array object to which the current element belong
+               }
+
+        </div>
+    </div>
+  </div>
 
 
           <div class="accordion-item">
